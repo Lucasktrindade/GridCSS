@@ -13,12 +13,11 @@
 }
 
 /* Todas as colunas devem estar flutando para esquerda e contendo padding de 15 px*/
-[class*="col-"] {
+.coluna {
+    position: relative;
     float: left;
-    padding: 15px;
-}
-.linha{
-	
+	padding: 35px;
+	border:1px solid red;
 }
 /*Limpa o float fazendo com que caso não exista coluna, não seja retirado da página.*/
 .linha:after {
@@ -28,48 +27,52 @@
 }
 /* Quando a tela for maior que 768px ele aplica as devidas proporções as colunas. Media Query para Tablet*/
 @media only screen and (min-width: 768px) {
-    .col-t-1 {width: 8.33%;}
-    .col-t-2 {width: 16.66%;}
-    .col-t-3 {width: 25%;}
-    .col-t-4 {width: 33.33%;}
-    .col-t-5 {width: 41.66%;}
-    .col-t-6 {width: 50%;}
-    .col-t-7 {width: 58.33%;}
-    .col-t-8 {width: 66.66%;}
-    .col-t-9 {width: 75%;}
-    .col-t-10 {width: 83.33%;}
-    .col-t-11 {width: 91.66%;}
-    .col-t-12 {width: 100%;}
+    .col-t-1{width:6.5%}
+	.col-t-2{width:15%}
+	.col-t-3{width:23.5%}
+	.col-t-4{width:32%}
+	.col-t-5{width:40.5%}
+	.col-t-6{width:49%}
+	.col-t-7{width:57.5%}
+	.col-t-8{width:66%}
+	.col-t-9{width:74.5%}
+	.col-t-10{width:83%}
+	.col-t-11{width:91.5%}
+	.col-t-12{width:100%;margin-left:0;}
+	.coluna + .coluna {margin-left: 2%;}
 }
 /* Quando a tela for maior que 992px ele aplica as devidas proporções as colunas. Media Query para Desktop*/
 @media only screen and (min-width: 992px) {
-    .col-1 {width: 8.33%;}
-	.col-2 {width: 16.66%;}
-	.col-3 {width: 25%;}
-	.col-4 {width: 33.33%;}
-	.col-5 {width: 41.66%;}
-	.col-6 {width: 50%;}
-	.col-7 {width: 58.33%;}
-	.col-8 {width: 66.66%;}
-	.col-9 {width: 75%;}
-	.col-10 {width: 83.33%;}
-	.col-11 {width: 91.66%;}
-	.col-12 {width: 100%;}
+    .col-1{width:6.5%}
+	.col-2{width:15%}
+	.col-3{width:23.5%}
+	.col-4{width:32%}
+	.col-5{width:40.5%}
+	.col-6{width:49%}
+	.col-7{width:57.5%}
+	.col-8{width:66%}
+	.col-9{width:74.5%}
+	.col-10{width:83%}
+	.col-11{width:91.5%}
+	.col-12{width:100%;margin-left:0;}
+	.coluna + .coluna {margin-left: 2%;}
+
 }
-/* Quando a tela for maior que 768px ele aplica as devidas proporções as colunas. Media Query para Desktop*/
+/* Quando a tela for maior que 1200px ele aplica as devidas proporções as colunas. Media Query para Desktop*/
 @media only screen and (min-width: 1200px) {
-    .col-g-1 {width: 8.33%;}
-	.col-g-2 {width: 16.66%;}
-	.col-g-3 {width: 25%;}
-	.col-g-4 {width: 33.33%;}
-	.col-g-5 {width: 41.66%;}
-	.col-g-6 {width: 50%;}
-	.col-g-7 {width: 58.33%;}
-	.col-g-8 {width: 66.66%;}
-	.col-g-9 {width: 75%;}
-	.col-g-10 {width: 83.33%;}
-	.col-g-11 {width: 91.66%;}
-	.col-g-12 {width: 100%;}
+    .col-g-1{width:6.5%}
+	.col-g-2{width:15%}
+	.col-g-3{width:23.5%}
+	.col-g-4{width:32%}
+	.col-g-5{width:40.5%}
+	.col-g-6{width:49%}
+	.col-g-7{width:57.5%}
+	.col-g-8{width:66%}
+	.col-g-9{width:74.5%}
+	.col-g-10{width:83%}
+	.col-g-11{width:91.5%}
+	.col-g-12{width:100%;margin-left:0;}
+	.coluna + .coluna {margin-left: 2%;}
 }
 /*Torna as imagens responsivas e não ultrapassa seu tamanho conforme a tela aumenta.*/
 img{
