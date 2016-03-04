@@ -18,12 +18,17 @@
     float: left;
 	padding: 35px;
 	border:1px solid red;
+	margin-top:2%;
 }
+/**/
+.hide-s{display:none;}
+.show-s{display:block;}
+.container-fluid,.container{width:100%;}
 /*Limpa o float fazendo com que caso não exista coluna, não seja retirado da página.*/
 .linha:after {
     content: "";
     clear: both;
-    display: block;
+    display: table;
 }
 /* Quando a tela for maior que 768px ele aplica as devidas proporções as colunas. Media Query para Tablet*/
 @media only screen and (min-width: 768px) {
@@ -39,7 +44,22 @@
 	.col-t-10{width:83%}
 	.col-t-11{width:91.5%}
 	.col-t-12{width:100%;margin-left:0;}
+	.col-t-offset-1{left:6.5%}
+	.col-t-offset-2{left:15%}
+	.col-t-offset-3{left:23.5%}
+	.col-t-offset-4{left:32%}
+	.col-t-offset-5{left:40.5%}
+	.col-t-offset-6{left:49%}
+	.col-t-offset-7{left:57.5%}
+	.col-t-offset-8{left:66%}
+	.col-t-offset-9{left:74.5%}
+	.col-t-offset-10{left:83%}
+	.col-t-offset-11{left:91.5%}
+	.col-t-offset-12{left:100%;}
 	.coluna + .coluna {margin-left: 2%;}
+	.container{width:750px;margin-right: auto;margin-left: auto;}
+	.show-t{display:block;}
+	.hide-t{display:none;}
 }
 /* Quando a tela for maior que 992px ele aplica as devidas proporções as colunas. Media Query para Desktop*/
 @media only screen and (min-width: 992px) {
@@ -55,8 +75,22 @@
 	.col-10{width:83%}
 	.col-11{width:91.5%}
 	.col-12{width:100%;margin-left:0;}
+	.col-offset-1{left:6.5%}
+	.col-offset-2{left:15%}
+	.col-offset-3{left:23.5%}
+	.col-offset-4{left:32%}
+	.col-offset-5{left:40.5%}
+	.col-offset-6{left:49%}
+	.col-offset-7{left:57.5%}
+	.col-offset-8{left:66%}
+	.col-offset-9{left:74.5%}
+	.col-offset-10{left:83%}
+	.col-offset-11{left:91.5%}
+	.col-offset-12{left:100%;}
 	.coluna + .coluna {margin-left: 2%;}
-
+	.container{width:950px;margin-right: auto;margin-left: auto;}
+	.show{display:block;}
+	.hide{display:none;}
 }
 /* Quando a tela for maior que 1200px ele aplica as devidas proporções as colunas. Media Query para Desktop*/
 @media only screen and (min-width: 1200px) {
@@ -72,7 +106,22 @@
 	.col-g-10{width:83%}
 	.col-g-11{width:91.5%}
 	.col-g-12{width:100%;margin-left:0;}
+	.col-g-offset-1{left:6.5%}
+	.col-g-offset-2{left:15%}
+	.col-g-offset-3{left:23.5%}
+	.col-g-offset-4{left:32%}
+	.col-g-offset-5{left:40.5%}
+	.col-g-offset-6{left:49%}
+	.col-g-offset-7{left:57.5%}
+	.col-g-offset-8{left:66%}
+	.col-g-offset-9{left:74.5%}
+	.col-g-offset-10{left:83%}
+	.col-g-offset-11{left:91.5%}
+	.col-g-offset-12{left:100%;}
 	.coluna + .coluna {margin-left: 2%;}
+	.container{width:1150px;margin-right: auto;margin-left: auto;}
+	.show-g{display:block;}
+	.hide-g{display:none;}
 }
 /*Torna as imagens responsivas e não ultrapassa seu tamanho conforme a tela aumenta.*/
 img{
