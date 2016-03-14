@@ -10,26 +10,26 @@
 /*Mobile first, faz com que as colunas sejam 100% em celulares. Para Celular */
 [class*="col-"] {
     width: 100%;
+	margin-left:0;
 }
-
 /* Todas as colunas devem estar flutando para esquerda e contendo padding de 15 px*/
 .coluna {
     position: relative;
     float: left;
-	padding: 35px;
+	padding: 15px;
 	border:1px solid red;
 	margin-top:2%;
 }
 /**/
 .hide-s{display:none;}
 .show-s{display:block;}
-.container-fluid,.container{width:100%;}
 /*Limpa o float fazendo com que caso não exista coluna, não seja retirado da página.*/
 .linha:after {
     content: "";
     clear: both;
     display: table;
 }
+.container-fluid{width:100%;}
 /* Quando a tela for maior que 768px ele aplica as devidas proporções as colunas. Media Query para Tablet*/
 @media only screen and (min-width: 768px) {
     .col-t-1{width:6.5%}
@@ -43,7 +43,9 @@
 	.col-t-9{width:74.5%}
 	.col-t-10{width:83%}
 	.col-t-11{width:91.5%}
-	.col-t-12{width:100%;margin-left:0;}
+	.col-t-12{width:100%;}
+	.coluna + .coluna{margin-left:2%;}
+	.col-t-12 + .col-t-12{margin-left:0;}
 	.col-t-offset-1{left:6.5%}
 	.col-t-offset-2{left:15%}
 	.col-t-offset-3{left:23.5%}
@@ -55,8 +57,7 @@
 	.col-t-offset-9{left:74.5%}
 	.col-t-offset-10{left:83%}
 	.col-t-offset-11{left:91.5%}
-	.col-t-offset-12{left:100%;}
-	.coluna + .coluna {margin-left: 2%;}
+	.col-t-offset-12{left:100%;margin-left:0;}
 	.container{width:750px;margin-right: auto;margin-left: auto;}
 	.show-t{display:block;}
 	.hide-t{display:none;}
@@ -74,7 +75,9 @@
 	.col-9{width:74.5%}
 	.col-10{width:83%}
 	.col-11{width:91.5%}
-	.col-12{width:100%;margin-left:0;}
+	.col-12{width:100%;}
+	.coluna + .coluna{margin-left:2%;}
+	.col-12 + .col-12{margin-left:0;}
 	.col-offset-1{left:6.5%}
 	.col-offset-2{left:15%}
 	.col-offset-3{left:23.5%}
@@ -86,9 +89,10 @@
 	.col-offset-9{left:74.5%}
 	.col-offset-10{left:83%}
 	.col-offset-11{left:91.5%}
-	.col-offset-12{left:100%;}
-	.coluna + .coluna {margin-left: 2%;}
+	.col-offset-12{left:100%;margin-left:0;}
+	
 	.container{width:950px;margin-right: auto;margin-left: auto;}
+	
 	.show{display:block;}
 	.hide{display:none;}
 }
@@ -105,7 +109,9 @@
 	.col-g-9{width:74.5%}
 	.col-g-10{width:83%}
 	.col-g-11{width:91.5%}
-	.col-g-12{width:100%;margin-left:0;}
+	.col-g-12{width:100%;}
+	.coluna + .coluna{margin-left:2%;}
+	.col-g-12 + .col-g-12{margin-left:0;}
 	.col-g-offset-1{left:6.5%}
 	.col-g-offset-2{left:15%}
 	.col-g-offset-3{left:23.5%}
@@ -117,9 +123,10 @@
 	.col-g-offset-9{left:74.5%}
 	.col-g-offset-10{left:83%}
 	.col-g-offset-11{left:91.5%}
-	.col-g-offset-12{left:100%;}
-	.coluna + .coluna {margin-left: 2%;}
+	.col-g-offset-12{left:100%;margin-left:0;}
+	
 	.container{width:1150px;margin-right: auto;margin-left: auto;}
+	
 	.show-g{display:block;}
 	.hide-g{display:none;}
 }
